@@ -54,10 +54,14 @@ class FibThread extends Thread {
                 count++;
             }
 
-            final double progress = (double) count / upperBound;
-            Platform.runLater(() -> progressBar.setProgress(progress));
+            if (upperBound != Integer.MAX_VALUE) {
+                final double progress = (double) count / upperBound;
+                Platform.runLater(() -> progressBar.setProgress(progress));
+            } else {
+                Platform.runLater(() -> progressBar.setProgress(-1));
+            }
 
-            if (a > Integer.MAX_VALUE - b) { 
+            if (a > Integer.MAX_VALUE - b) {
                 break;
             }
 
@@ -78,7 +82,7 @@ class FibThread extends Thread {
         }
         Platform.runLater(() -> {
             progressBar.setProgress(isStopped ? 0 : 1);
-            
+
             if (!isStopped) {
                 controller.setPrimeButtonsFinishedState();
             }
