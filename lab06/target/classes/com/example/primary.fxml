@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<SplitPane dividerPositions="0.5" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.PrimaryController">
+    <items>
+        <Pane prefHeight="200.0" prefWidth="200.0">
+            <children>
+                <Label layoutX="95.0" layoutY="26.0" text="Prime Number" textAlignment="CENTER">
+                    <font>
+                        <Font size="24.0" />
+                    </font>
+                </Label>
+
+                <VBox layoutX="14.0" layoutY="73.0" prefHeight="63.0" prefWidth="150.0">
+                    <children>
+                        <Label text="Lower bound" textAlignment="CENTER" />
+                        <TextField fx:id="primeLowerBoundField" />
+                    </children>
+                </VBox>
+
+                <VBox layoutX="14.0" layoutY="136.0" prefHeight="63.0" prefWidth="150.0">
+                    <children>
+                        <Label text="Upper bound" textAlignment="CENTER" />
+                        <TextField fx:id="primeUpperBoundField" />
+                    </children>
+                </VBox>
+
+                <HBox layoutX="15.0" layoutY="200.0" prefHeight="35.0" prefWidth="316.0" spacing="8.0">
+                    <children>
+                        <Button fx:id="primeGenerateButton" mnemonicParsing="false" onAction="#handlePrimeGenerate" text="Generate Number" />
+                        <Button fx:id="primePauseButton" mnemonicParsing="false" onAction="#handlePrimePause" prefHeight="25.0" prefWidth="60.0" text="Pause" />
+                        <Button fx:id="primeResumeButton" mnemonicParsing="false" onAction="#handlePrimeResume" prefHeight="25.0" prefWidth="60.0" text="Resume" />
+                        <Button fx:id="primeStopButton" mnemonicParsing="false" onAction="#handlePrimeStop" prefHeight="25.0" prefWidth="60.0" text="stop" />
+                        <Button fx:id="primeResetButton" mnemonicParsing="false" onAction="#handlePrimeReset" prefHeight="25.0" prefWidth="60.0" text="Reset" />
+                    </children>
+                </HBox>
+
+                <TextArea fx:id="primeTextArea" editable="false" layoutX="15.0" layoutY="240.0" prefHeight="200.0" prefWidth="280.0" promptText="Prime Numbers">
+                </TextArea>
+
+                <ProgressBar fx:id="primeProgressBar" layoutX="15.0" layoutY="460.0" prefHeight="26.0" prefWidth="316.0" progress="0.0" />
+            </children>
+        </Pane>
+
+        <Pane prefHeight="200.0" prefWidth="200.0">
+            <children>
+                <Label layoutX="70.0" layoutY="25.0" text="Fibonacci sequence" textAlignment="CENTER">
+                    <font>
+                        <Font size="24.0" />
+                    </font>
+                </Label>
+
+                <VBox layoutX="14.0" layoutY="73.0" prefHeight="63.0" prefWidth="150.0">
+                    <children>
+                        <Label text="Lower bound" textAlignment="CENTER" />
+                        <TextField fx:id="fibLowerBoundField" />
+                    </children>
+                </VBox>
+
+                <VBox layoutX="14.0" layoutY="136.0" prefHeight="63.0" prefWidth="150.0">
+                    <children>
+                        <Label text="Upper bound" textAlignment="CENTER" />
+                        <TextField fx:id="fibUpperBoundField" />
+                    </children>
+                </VBox>
+
+                <HBox layoutX="15.0" layoutY="200.0" prefHeight="35.0" prefWidth="316.0" spacing="8.0">
+                    <children>
+                        <Button fx:id="fibGenerateButton" mnemonicParsing="false" onAction="#handleFibGenerate" text="Generate Number" />
+                        <Button fx:id="fibPauseButton" mnemonicParsing="false" onAction="#handleFibPause" prefHeight="25.0" prefWidth="60.0" text="Pause" />
+                        <Button fx:id="fibResumeButton" mnemonicParsing="false" onAction="#handleFibResume" prefHeight="25.0" prefWidth="60.0" text="Resume" />
+                        <Button fx:id="fibStopButton" mnemonicParsing="false" onAction="#handleFibStop" prefHeight="25.0" prefWidth="60.0" text="stop" />
+                        <Button fx:id="fibResetButton" mnemonicParsing="false" onAction="#handleFibReset" prefHeight="25.0" prefWidth="60.0" text="Reset" />
+                    </children>
+                </HBox>
+
+                <TextArea fx:id="fibTextArea" editable="false" layoutX="14.0" layoutY="240.0" prefHeight="200.0" prefWidth="280.0" promptText="Fibonacci Numbers">
+                </TextArea>
+
+                <ProgressBar fx:id="fibProgressBar" layoutX="15.0" layoutY="460.0" prefHeight="26.0" prefWidth="316.0" progress="0.0" />
+            </children>
+        </Pane>
+    </items>
+</SplitPane>
