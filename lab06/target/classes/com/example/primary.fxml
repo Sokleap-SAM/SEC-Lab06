@@ -45,10 +45,10 @@
                     </children>
                 </HBox>
 
-                <TextArea fx:id="primeTextArea" editable="false" layoutX="15.0" layoutY="240.0" prefHeight="200.0" prefWidth="280.0" promptText="Prime Numbers">
+                <TextArea fx:id="primeTextArea" editable="false" layoutX="15.0" layoutY="240.0" prefHeight="200.0" prefWidth="320.0" promptText="Prime Numbers">
                 </TextArea>
 
-                <ProgressBar fx:id="primeProgressBar" layoutX="15.0" layoutY="460.0" prefHeight="26.0" prefWidth="316.0" progress="0.0" />
+                <ProgressBar fx:id="primeProgressBar" layoutX="15.0" layoutY="460.0" prefHeight="26.0" prefWidth="320.0" progress="0.0" />
             </children>
         </Pane>
 
@@ -84,10 +84,10 @@
                     </children>
                 </HBox>
 
-                <TextArea fx:id="fibTextArea" editable="false" layoutX="14.0" layoutY="240.0" prefHeight="200.0" prefWidth="280.0" promptText="Fibonacci Numbers">
+                <TextArea fx:id="fibTextArea" editable="false" layoutX="14.0" layoutY="240.0" prefHeight="200.0" prefWidth="320.0" promptText="Fibonacci Numbers">
                 </TextArea>
 
-                <ProgressBar fx:id="fibProgressBar" layoutX="15.0" layoutY="460.0" prefHeight="26.0" prefWidth="316.0" progress="0.0" />
+                <ProgressBar fx:id="fibProgressBar" layoutX="15.0" layoutY="460.0" prefHeight="26.0" prefWidth="320.0" progress="0.0" />
             </children>
         </Pane>
     </items>
