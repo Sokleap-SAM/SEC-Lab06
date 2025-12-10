@@ -37,7 +37,7 @@
 
                 <HBox layoutX="15.0" layoutY="200.0" prefHeight="35.0" prefWidth="360.0" spacing="8.0">
                     <children>
-                        <Button fx:id="primeGenerateButton" mnemonicParsing="false" onAction="#handlePrimeGenerate" text="Generate Number" />
+                        <Button fx:id="primeGenerateButton" mnemonicParsing="false" onAction="#handlePrimeGenerate" text="Generate" />
                         <Button fx:id="primePauseButton" mnemonicParsing="false" onAction="#handlePrimePause" prefHeight="25.0" prefWidth="80.0" text="Pause" />
                         <Button fx:id="primeResumeButton" mnemonicParsing="false" onAction="#handlePrimeResume" prefHeight="25.0" prefWidth="80.0" text="Resume" />
                         <Button fx:id="primeStopButton" mnemonicParsing="false" onAction="#handlePrimeStop" prefHeight="25.0" prefWidth="60.0" text="stop" />
@@ -76,7 +76,7 @@
 
                 <HBox layoutX="15.0" layoutY="200.0" prefHeight="35.0" prefWidth="360.0" spacing="8.0">
                     <children>
-                        <Button fx:id="fibGenerateButton" mnemonicParsing="false" onAction="#handleFibGenerate" text="Generate Number" />
+                        <Button fx:id="fibGenerateButton" mnemonicParsing="false" onAction="#handleFibGenerate" text="Generate" />
                         <Button fx:id="fibPauseButton" mnemonicParsing="false" onAction="#handleFibPause" prefHeight="25.0" prefWidth="80.0" text="Pause" />
                         <Button fx:id="fibResumeButton" mnemonicParsing="false" onAction="#handleFibResume" prefHeight="25.0" prefWidth="80.0" text="Resume" />
                         <Button fx:id="fibStopButton" mnemonicParsing="false" onAction="#handleFibStop" prefHeight="25.0" prefWidth="60.0" text="stop" />
